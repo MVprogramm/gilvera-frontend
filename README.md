@@ -4,6 +4,6 @@
 
 ### HTML, SASS, BEM, PRETTIER, PHOTOSHOP
 
-#### website `https://mvprogramm.github.io/gilvera-frontend/`
+#### website https://mvprogramm.github.io/gilvera-frontend/
 
-author `michael@valiahmetov@gmail.com`
+author `michael.valiahmetov@gmail.com`
