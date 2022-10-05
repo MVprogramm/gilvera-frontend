@@ -1,0 +1,25 @@
+.greeting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 51px;
+
+  &__title {
+    margin-right: 3px;
+  }
+
+  &__title_comma {
+    margin-left: -4px;
+  }
+
+  &__img {
+    display: block;
+    width: 36px;
+    height: 36px;
+    padding: 2px 2px 2px 2px;
+  }
+
+  @include onMobile {
+    display: none;
+  }
+}

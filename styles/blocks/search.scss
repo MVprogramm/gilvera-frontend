@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 12px;
+  }
+
+  &__field {
+    border: none;
+    background-color: #f9fbff;
+  }
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #b5b7c0;
+}

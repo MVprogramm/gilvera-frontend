@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  width: $maxWidth;
+  max-width: $maxWidth;
+  height: 1198px;
+  background-color: #fafbff;
+
+  @include onMobile {
+    flex-direction: column;
+    width: $minWidth;
+    max-width: $minWidth;
+    height: 2200px;
+  }
+}

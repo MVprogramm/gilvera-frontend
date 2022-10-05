@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 39px;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 65px;
+
+  &__icon {
+    height: 33px;
+    margin-right: 12px;
+  }
+
+  &__title {
+    font-size: 26px;
+    margin-right: 4px;
+  }
+
+  &__version {
+    font-size: 10px;
+    color: #838383;
+    margin-top: 10px;
+  }
+}

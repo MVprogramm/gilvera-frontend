@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <article class="content">
+      <sidebar class="sidebar">
+        <a href="/" class="logo">
+          <img src="./images/logo.png" alt="logo" class="logo__icon" />
+          <h1 class="logo__title">Dashboard</h1>
+          <h6 class="logo__version">v.01</h6>
+        </a>
+        <nav class="nav">
+          <div class="nav__item">
+            <img src="./images/key.png" alt="key icon" class="nav__icon" />
+            <h3 class="nav__title">Dashboard</h3>
+          </div>
+          <div class="nav__item">
+            <img src="./images/cube.png" alt="cube icon" class="nav__icon" />
+            <h3 class="nav__title">Product</h3>
+            <img src="./images/arrow.png" alt="arrow" class="nav__arrow" />
+          </div>
+          <div class="nav__item nav__item_selected">
+            <img
+              src="./images/person.png"
+              alt="person icon"
+              class="nav__icon"
+            />
+            <h3 class="nav__title nav__title_selected">Customers</h3>
+            <img
+              src="./images/arrow_white.png"
+              alt="arrow"
+              class="nav__arrow"
+            />
+          </div>
+          <div class="nav__item">
+            <img
+              src="./images/wallet.png"
+              alt="wallet icon"
+              class="nav__icon"
+            />
+            <h3 class="nav__title">Income</h3>
+            <img src="./images/arrow.png" alt="arrow" class="nav__arrow" />
+          </div>
+          <div class="nav__item">
+            <img
+              src="./images/percent.png"
+              alt="percent icon"
+              class="nav__icon"
+            />
+            <h3 class="nav__title">Promote</h3>
+            <img src="./images/arrow.png" alt="arrow" class="nav__arrow" />
+          </div>
+          <div class="nav__item">
+            <img
+              src="./images/question.png"
+              alt="question icon"
+              class="nav__icon"
+            />
+            <h3 class="nav__title">Help</h3>
+            <img src="./images/arrow.png" alt="arrow" class="nav__arrow" />
+          </div>
+        </nav>
+        <div class="user">
+          <img
+            src="./images/user_img.png"
+            alt="user photo"
+            class="user__photo"
+          />
+          <div class="user__info">
+            <h4 class="user__name">Evano</h4>
+            <h5 class="user__position">Project Manager</h5>
+          </div>
+        </div>
+      </sidebar>
+      <main class="main">
+        <div class="greeting">
+          <h2 class="greeting__title">Hello Evano</h2>
+          <img src="./images/hello.png" alt="greeting" class="greeting__img" />
+          <h2 class="greeting__title greeting__title_comma">,</h2>
+        </div>
+
+        <container class="dashboard">
+          <header class="dashboard__header">
+            <div class="dashboard__name">
+              <h2 class="dashboard__title">All Customers</h2>
+              <h4 class="dashboard__subtitle">Active Members</h4>
+            </div>
+            <form class="dashboard__search" name="search">
+              <label for="search" class="search">
+                <img
+                  src="./images/search.png"
+                  alt="search glass"
+                  class="search__icon"
+                />
+              </label>
+              <input type="text" class="search__field" placeholder="Search" />
+            </form>
+          </header>
+          <content class="table">
+            <div class="table__head">
+              <div class="table__item table__item_head">
+                <h4 class="table__item_name">Customer Name</h4>
+                <h4 class="table__item_company">Company</h4>
+                <h4 class="table__item_phone">Phone Number</h4>
+                <h4 class="table__item_email">Email</h4>
+                <h4 class="table__item_country">Country</h4>
+                <h4 class="table__item_status">Status</h4>
+              </div>
+            </div>
+            <ul class="table__list">
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Jane Cooper</h4>
+                <h4 class="table__item table__item_company">Microsoft</h4>
+                <h4 class="table__item table__item_phone">(225) 555-0118</h4>
+                <h4 class="table__item table__item_email">
+                  jane@microsoft.com
+                </h4>
+                <h4 class="table__item table__item_country">United States</h4>
+                <div class="table__item table__item_status table__item_active">
+                  Active
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Floyd Miles</h4>
+                <h4 class="table__item table__item_company">Yahoo</h4>
+                <h4 class="table__item table__item_phone">(205) 555-0100</h4>
+                <h4 class="table__item table__item_email">floyd@yahoo.com</h4>
+                <h4 class="table__item table__item_country">Kiribati</h4>
+                <div
+                  class="table__item table__item_status table__item_inactive"
+                >
+                  Inactive
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Ronald Richards</h4>
+                <h4 class="table__item table__item_company">Adobe</h4>
+                <h4 class="table__item table__item_phone">(302) 555-0107</h4>
+                <h4 class="table__item table__item_email">ronald@adobe.com</h4>
+                <h4 class="table__item table__item_country">Israel</h4>
+                <div
+                  class="table__item table__item_status table__item_inactive"
+                >
+                  Inactive
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Marvin McKinney</h4>
+                <h4 class="table__item table__item_company">Tesla</h4>
+                <h4 class="table__item table__item_phone">(252) 555-0126</h4>
+                <h4 class="table__item table__item_email">marvin@tesla.com</h4>
+                <h4 class="table__item table__item_country">Iran</h4>
+                <div class="table__item table__item_status table__item_active">
+                  Active
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Jerome Bell</h4>
+                <h4 class="table__item table__item_company">Google</h4>
+                <h4 class="table__item table__item_phone">(629) 555-0129</h4>
+                <h4 class="table__item table__item_email">jerome@google.com</h4>
+                <h4 class="table__item table__item_country">Réunion</h4>
+                <div class="table__item table__item_status table__item_active">
+                  Active
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Kathryn Murphy</h4>
+                <h4 class="table__item table__item_company">Microsoft</h4>
+                <h4 class="table__item table__item_phone">(406) 555-0120</h4>
+                <h4 class="table__item table__item_email">
+                  kathryn@microsoft.com
+                </h4>
+                <h4 class="table__item table__item_country">Curaçao</h4>
+                <div class="table__item table__item_status table__item_active">
+                  Active
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Jacob Jones</h4>
+                <h4 class="table__item table__item_company">Yahoo</h4>
+                <h4 class="table__item table__item_phone">(208) 555-0112</h4>
+                <h4 class="table__item table__item_email">jacob@yahoo.com</h4>
+                <h4 class="table__item table__item_country">Brazil</h4>
+                <div class="table__item table__item_status table__item_active">
+                  Active
+                </div>
+              </li>
+              <li class="table__item table__item_list">
+                <h4 class="table__item table__item_name">Kristin Watson</h4>
+                <h4 class="table__item table__item_company">Facebook</h4>
+                <h4 class="table__item table__item_phone">(704) 555-0127</h4>
+                <h4 class="table__item table__item_email">
+                  kristin@facebook.com
+                </h4>
+                <h4 class="table__item table__item_country">Åland Islands</h4>
+                <div
+                  class="table__item table__item_status table__item_inactive"
+                >
+                  Inactive
+                </div>
+              </li>
+            </ul>
+            <footer class="table__pagination">
+              <h4 class="pagination__info">
+                Showing data 1 to 8 of 256K entries
+              </h4>
+              <button class="pagination__open">See more</button>
+              <div class="pagination__nav">
+                <button class="pagination__page">
+                  <img
+                    src="./images/prev.png"
+                    alt="prev arrow"
+                    class="pagination__arrow"
+                  />
+                </button>
+                <button class="pagination__page pagination__page_active">
+                  1
+                </button>
+                <button class="pagination__page">2</button>
+                <button class="pagination__page">3</button>
+                <button class="pagination__page">4</button>
+                <h4 class="pagination__interval">...</h4>
+                <button class="pagination__page">40</button>
+                <button class="pagination__page">
+                  <img
+                    src="./images/next.png"
+                    alt="next arrow"
+                    class="pagination__arrow"
+                  />
+                </button>
+              </div>
+            </footer>
+          </content>
+        </container>
+      </main>
+    </article>
+  </body>
+</html>

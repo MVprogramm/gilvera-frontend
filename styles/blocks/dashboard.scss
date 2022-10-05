@@ -1,0 +1,62 @@
+.dashboard {
+  width: 968px;
+  height: 812px;
+  border-radius: 30px;
+  background-color: #fff;
+
+  @include onMobile {
+    width: 260px;
+    height: 1430px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 38px;
+    margin-bottom: 10px;
+
+    @include onMobile {
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    margin-right: 506px;
+
+    @include onMobile {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #16c098;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    width: 216px;
+    height: 38px;
+    border-radius: 10px;
+    padding-left: 11px;
+    background-color: #f9fbff;
+  }
+}
